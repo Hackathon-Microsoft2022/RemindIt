@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smart Alert</string>
+    <string name="google_maps_key">AIzaSyAActACiRf7USq4gxgh3dNOU7acx4ThEvQ</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="channel_description">Notification channel</string>
+    <string name="notification_activity">NotificationView</string>
+    <string name="event_type_prompt">Event Type</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/fab_margin"
+                android:paddingLeft="@dimen/fab_margin"
+                android:text="Device location off !"
+                android:textStyle="bold"
+                android:textSize="@dimen/fab_margin"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="Set your exact landmark to improve your nearby alert finding experience."
+                android:textSize="@dimen/fab_margin"
+                android:textColor="@color/grey"
+                android:paddingBottom="@dimen/fab_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/fab_margin"
+                android:layout_margin="@dimen/fab_margin"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="?actionBarSize"
+                    android:text="Close"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorPrimaryLight"/>
+
+                <Button
+                    android:id="@+id/btnAction"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="?actionBarSize"
+                    android:text="Enable Location"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

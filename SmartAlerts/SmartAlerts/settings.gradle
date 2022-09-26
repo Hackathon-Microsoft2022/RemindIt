@@ -1,0 +1,2 @@
+rootProject.name = "SmartAlerts"
+include ':app'
